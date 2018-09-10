@@ -1,4 +1,6 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 Shader "Lux/Anisotropic Lighting/Hair" {
 	Properties {
@@ -107,7 +109,7 @@ Shader "Lux/Anisotropic Lighting/Hair" {
 		  		o.worldBinormal_screenPosY.xyz = cross(worldNormal, worldTangent) * tangentSign;
 			#endif
 
-			float4 pos = mul (UNITY_MATRIX_MVP, v.vertex);
+			float4 pos = UnityObjectToClipPos (v.vertex);
 			float4 screenPos = ComputeScreenPos (pos);
 			screenPos.xy /= screenPos.w;
 			o.worldTangent_screenPosX.w = screenPos.x;

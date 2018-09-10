@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 Shader "Hidden/Lux Pro Internal-DeferredShading" {
@@ -192,7 +194,7 @@ struct v2f {
 v2f vert (float4 vertex : POSITION, float2 texcoord : TEXCOORD0)
 {
 	v2f o;
-	o.vertex = mul(UNITY_MATRIX_MVP, vertex);
+	o.vertex = UnityObjectToClipPos(vertex);
 	o.texcoord = texcoord.xy;
 	return o;
 }

@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 // Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 
@@ -665,7 +667,7 @@ VertexOutputForwardBase vertForwardBase (LuxVertexInput v)
 		o.posWorld.xyz = posWorld.xyz;
 		o.posWorld.w = distance(_WorldSpaceCameraPos, posWorld);
 //	#endif
-	o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos(v.vertex);
 //	Lux
 	o.tex = LuxTexCoords(v);
 //
@@ -867,7 +869,7 @@ VertexOutputForwardAdd vertForwardAdd (LuxVertexInput v)
 	o.posWorld = posWorld;
 	o.posWorld.w = distance(_WorldSpaceCameraPos, posWorld);
 //
-	o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos(v.vertex);
 //	Lux:
 	o.tex = LuxTexCoords(v);
 //	dx9 does not like eyeVec in ForwardAdd, so we shift it to the pixelshader
@@ -1056,7 +1058,7 @@ VertexOutputDeferred vertDeferred (LuxVertexInput v)
 //	Lux
 	o.posWorld.w = distance(_WorldSpaceCameraPos, posWorld);
 
-	o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos(v.vertex);
 //	Lux
 	o.tex = LuxTexCoords(v);
 //o.eyeVec = NormalizePerVertexNormal(posWorld.xyz - _WorldSpaceCameraPos);

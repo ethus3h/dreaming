@@ -19,12 +19,12 @@ MonoBehaviour:
   m_UseIndexGrid: 1
   m_MaxGridSize: 64
   m_GridBucketSize: 64
-  m_DesiredComputeAPI: 1
+  m_DesiredComputeAPI: 2
   m_EnableComputeOnAndroid: 0
   m_OpenCLDesiredDeviceType: 4
   m_PreloadComputeShaders: 1
   m_EnableOpenCLGPUOnMac: 0
   m_OpenCLPlatformBlacklist: []
   m_OpenCLDeviceBlacklist: []
-  m_ProjectID: 167f6deb-bd9f-4f4e-9186-1ba1278575af
+  m_ProjectID: 2906781c-e6d6-4011-b4d0-20f352697d3c
   m_SortingLayerUniqueIDs: 00000000
