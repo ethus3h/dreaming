@@ -1,0 +1,11 @@
+-text- struck through
+_text_ underlined
+__text__ double underlined
+<sub>text</sub> subscript
+<sup>text</sup> superscript
+[sic] it's not a mistake
+<caret-insertion pos="below">text</caret-insertion> inserted text using caret below (or "above" for above)
+<circle>text</circle> text is within a circle
+<circled>text</circled> text is circled (not necessarily a circle shape)
+@text@ character as described by text
+<br> line break

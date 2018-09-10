@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: eb4f48dcca090744c922b5eda260c060
+timeCreated: 1493523012
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - pcamera: {instanceID: 0}
+  - scoreLabel: {instanceID: 0}
+  - startPad: {instanceID: 0}
+  - waterWakeRenderer: {fileID: 198046735170411296, guid: fce56b6858feab144bbf2dbca49fbbe9,
+      type: 2}
+  - waterSplashRenderer: {fileID: 198797211105993050, guid: 06ae818ef365d3f4494086998b41ee95,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

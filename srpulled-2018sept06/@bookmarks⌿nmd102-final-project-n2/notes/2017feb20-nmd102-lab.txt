@@ -1,0 +1,25 @@
+Voltage (amount of stuff flowing through the wire)
+Current (I) (rate of flow)
+Resistance
+V=I*R
+
+Voltage is Volts
+Current is Amperes
+Resistance is Ohms
+
+I=V/R. For a given V, if R is bigger, I is smaller; if R is smaller I is bigger.
+
+Longer path has more resistance.
+
+Voltage potential.
+Potentiometer; voltage dividers.
+
+Variable resistors.
+Floating inputs.
+
+We need to know how to restrict the amount of electricity that goes through our circuits, so that we don't send too much and burn out the components (e.g. LEDs). This is usually done using resistors.
+
+LEDs.
+
+
+DUE: Watch sensors videos https://itp.nyu.edu/physcomp/videos/videos-sensors/

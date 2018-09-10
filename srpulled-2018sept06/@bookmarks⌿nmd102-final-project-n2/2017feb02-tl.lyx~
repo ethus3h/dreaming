@@ -1,0 +1,154 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman Wreathe
+\font_sans Linux Biolinum O
+\font_typewriter Courier 10 Pitch
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf true
+\font_sf_scale 85
+\font_tt_scale 85
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Title
+\end_layout
+
+\begin_layout Author
+Author
+\end_layout
+
+\begin_layout Date
+Date
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Mauris facilisis dapibus mauris, et sagittis lectus ornare a.
+ Fusce eu dapibus eros, at sollicitudin purus.
+ Phasellus eget enim diam.
+ Aenean mauris quam, mattis in odio a, dignissim blandit lorem.
+ Duis ultricies elit felis, in varius neque feugiat a.
+ Nam sed finibus augue.
+ Quisque sit amet commodo felis, quis luctus leo.
+ In facilisis urna pharetra, accumsan lectus sed, consectetur dolor.
+ In vel augue dictum, tristique dui sit amet, ultrices purus.
+ Morbi bibendum congue neque, id facilisis metus.
+ In tincidunt purus eget dui auctor accumsan.
+ Vivamus porta rhoncus varius.
+ Sed luctus at nunc non molestie.
+ Nulla facilisi.
+ Aliquam eget tincidunt urna.
+ Aliquam dignissim, ex a porttitor tristique, magna orci ullamcorper risus,
+ eget consectetur risus leo quis felis.
+ Proin nec nisl semper, semper augue ac, porta magna.
+ Pellentesque eu eleifend arcu.
+\end_layout
+
+\begin_layout Standard
+Sed vitae convallis purus.
+ Maecenas tellus massa, volutpat quis porta a, vulputate a metus.
+ Nullam non consectetur erat.
+ Cras mi urna, rhoncus vel pellentesque in, elementum sed lorem.
+ Quisque suscipit mi nec dolor laoreet ultricies.
+ Cras auctor eleifend dui, in pharetra lorem.
+ Donec posuere elit eros, at sagittis nulla vulputate et.
+ Vivamus varius justo ac velit fringilla dignissim non at lectus.
+ Duis at dapibus risus.
+ Pellentesque nunc sapien, sodales at tellus vel, posuere egestas augue.
+ Ut vel justo aliquam, ultricies sem a, facilisis sapien.
+ Pellentesque congue justo nec erat blandit luctus.
+ Fusce malesuada accumsan ante sed pellentesque.
+ Sed vitae condimentum enim.
+ Fusce venenatis est nec lacus feugiat, efficitur vulputate justo feugiat.
+ Integer vel varius nulla, non venenatis eros.
+ Curabitur sagittis quis ex nec molestie.
+ Nulla dictum semper lorem, ut imperdiet eros sagittis non.
+ Interdum et malesuada fames ac ante ipsum primis in faucibus.
+ Quisque nec bibendum nisi, quis dignissim massa.
+ Suspendisse eu dolor ex.
+\end_layout
+
+\begin_layout Standard
+0Maecenas hendrerit facilisis eleifend.
+ Duis placerat quis nulla at semper.
+ Donec tincidunt tortor a consequat bibendum.
+ Mauris iaculis ut enim vel lacinia.
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Pellentesque erat ante, tincidunt at leo eu, pellentesque maximus enim.
+ Pellentesque mollis nulla in orci consequat, non laoreet mauris blandit.
+ Sed erat nunc, scelerisque in ante vel, molestie dictum ligula.
+ Nulla eget gravida ligula, vitae vehicula justo.
+ Quisque iaculis magna sit amet elementum pulvinar.
+ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ ridiculus mus.
+ Maecenas mattis quis tortor vel vestibulum.
+ Curabitur imperdiet lobortis nisl.
+ Vivamus sed risus suscipit, hendrerit velit ut, tincidunt est.
+ Sed porttitor ultrices dictum.
+ Aenean vel enim varius, euismod purus quis, condimentum nisi.
+ Phasellus sed mollis quam, rutrum venenatis odio.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,709 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman Wreathe
+\font_sans Linux Biolinum O
+\font_typewriter Courier New
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf true
+\font_sf_scale 85
+\font_tt_scale 85
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize 17
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\emph on
+Ember
+\emph default
+, Chapter 2.1: Redesign (based on version 1.0.52)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The text here is outdated; this document is for discussing document design
+ rather than the document text.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Redesigned by Elliot Chandler (Wallace)
+\end_layout
+
+\begin_layout Date
+2017 Feb.
+ 16
+\end_layout
+
+\begin_layout Section*
+Introduction: Ethics and Ember
+\end_layout
+
+\begin_layout Standard
+In the emerging hacker culture of the early 1960s, Ted Nelson, a graduate
+ student at Harvard, began work on a computerized information management
+ system that would later become known as “Project Xanadu”.
+ The project promised amazing abilities.
+ It was designed to provide definitive copies of documents that would be
+ preserved in perpetuity, which could be referenced in other documents by
+ quotations or references, so that the original source document of a passage
+ could always easily be found.
+ This aimed to provide an indefinitely scalable computerized collective
+ memory for the preservation of humanity’s history and knowledge.
+ This monumental project, despite significant corporate backing, was not
+ a success.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Wolf, Gary.
+ “The Curse of Xanadu”.
+\end_layout
+
+\end_inset
+
+ I’d like to look at why it failed — but we’ll get back to that later.
+\end_layout
+
+\begin_layout Standard
+There are a large number of works of great cultural importance.
+ They have touched on a number of meaningful subjects, but several subjects
+ have stood out particularly for me: ethics, rights, prejudice and bigotry,
+ and theology.
+ These are elements of society that play important roles, influencing the
+ ways people live and experience their daily lives.
+\end_layout
+
+\begin_layout Standard
+When you look at life from a perspective of fundamentals, there are a few
+ things that are necessary: food, water, and shelter.
+ Without these basic elements, humans would not survive very long.
+ If one is hard working and clever, one can provide these things for one’s
+ self, by living off the land.
+ When humans start to live together in communities, things become more complicat
+ed; medical care and education become important.
+ The goals of a community are to make life more secure and predictable for
+ the community’s members, and to reduce the hardships associated with “primitive
+” living (living without the support systems of a complex society).
+ But with those goals comes a problem: how are those goals to be effectively
+ implemented? Through the development of strategies such as specialization
+ of individuals’ abilities and the creation of technological solutions,
+ these challenges can be met.
+\end_layout
+
+\begin_layout Standard
+As more people start living together, though, they will almost inevitably
+ come into conflict.
+ What can be done when the individual’s interests conflict with those of
+ the society? What about conflicts between individuals? To deal with these
+ issues, laws and a justice system can be put into place.
+ An economy or labor-sharing strategy can aid in the exchange of services
+ and goods, to avoid conflicts over these matters.
+ A free market economy is helpful to a society, because it redirects the
+ energies of greed and uses them as a force for technological development.
+\end_layout
+
+\begin_layout Standard
+Philosophical discourse becomes important in many areas, such as the resolution
+ of the conflicts and challenges of a complex society, and the research
+ into understanding the world around us.
+ This discourse leads to the development of more complex technology drawing
+ on the ideas of the society, then leading to debates about ethics, to scientifi
+c investigation about the nature of our world, and to the development of
+ ways to understand and accept who we are, such as religion and science.
+\end_layout
+
+\begin_layout Standard
+Ideas, knowledge, and art become economically motivated, and so copyright
+ and patent laws are established to encourage and protect innovation in
+ these areas.
+ The wide availability of information becomes increasingly relevant, and
+ information technology and distribution systems such as books and computers
+ are developed.
+ Support infrastructures are created and strengthened, to protect society
+ against threats both external and internal, such as disease, crime, terrorism,
+ civil unrest, and war.
+\end_layout
+
+\begin_layout Standard
+I would like to attempt to improve on the existing systems that have developed
+ for solving these problems.
+ I would like to undertake this project in an incremental, scalable manner,
+ rather than creating a complex system that would need to be implemented
+ all at once to be effective.
+ That way, small improvements could be made without attempting to undertake
+ the insurmountable task of improving larger components of society at once.
+ This incremental development would allow for the strengths of the existing
+ systems to persist, as well.
+\end_layout
+
+\begin_layout Standard
+The many texts I have studied have helped me understand better how I could
+ go about achieving these goals, and have provided interesting and valuable
+ insights about what I believe.
+ In many cases, it is difficult or impossible to prove to the satisfaction
+ of a large number of people what the ideal systems are for society; in
+ such cases I can only at once stand by my own beliefs and also accept that
+ other valid solutions and reasonings can exist as well.
+\end_layout
+
+\begin_layout Standard
+The most important thing I think I will achieve, which has both shaped and
+ been shaped by my experience of study, is the incremental development of
+ improved and redeveloped societal structure and infrastructure.
+ To this end, I have gathered a number of disparate elements of the project
+ under the name of “Ember”, for ease of reference; these diverse objectives
+ I believe have the potential to improve the general standard of living.
+ At the same time, it is important to ensure that the Ember project does
+ not fall into the same pitfalls that befell Project Xanadu, despite their
+ many parallels and similarities.
+\end_layout
+
+\begin_layout Standard
+Project Xanadu and Ember are both projects with lofty goals, born out of
+ a Nietzscheian rage at the status quo, aiming to radically transform and
+ reshape various aspects of society for the better.
+ They are both ambitious, and championed by someone without a thorough understan
+ding of the technological and economic realities and limitations of the
+ world around them.
+ They both are driven by grand ideas, with little thought given to short
+ term practical implementation and utility of those ideas.
+ They both have the potential to absorb vast amounts of investment without
+ return.
+ My hope is that by assessing and strategizing around these similar aspects,
+ and understanding the ways in which they relate to Project Xanadu’s failure
+ to produce, such a catastrophe can be avoided by Ember.
+\end_layout
+
+\begin_layout Standard
+Ember is a multifaceted project to develop a scalable environment for building
+ an effective society.
+ The goal of the project is to create a system to enable efficacy, efficiency,
+ and justice within society, by creating a social structure that would work
+ to create an efficient opt-in society within the framework of the diverse
+ and valuable existing societies.
+ The plan for the project is to pursue these goals by developing individual
+ components that each provide an integral part of the whole societal system.
+ My current proposal is comprised of several components, including a coordinatio
+n organization, a philosophy of ethics, a nonprofit standards-driven services
+ collective, a computing environment, a reference collection of the most
+ important knowledge, a library of great cultural works, a spiritual framework,
+ and a multimedia artwork.
+\end_layout
+
+\begin_layout Standard
+The four subjects that will prove integral in the effective development
+ of the Ember project that I would principally like to discuss in this paper
+ and which have been of most import to my journey of learning are ethics,
+ rights, prejudice and bigotry, and theology.
+\end_layout
+
+\begin_layout Standard
+Ethics are one of the central aspects of a complex society, with an understandin
+g of what is “justice” being necessary for the establishment of effective
+ justice systems, and an understanding of what is ethically acceptable scientifi
+c research and technological development being necessary for a society to
+ respect the dignity of the world.
+\end_layout
+
+\begin_layout Standard
+In the Zimbardo prison experiment, we saw an influential and famous experiment
+ that was ethically very dubious, and likely had lasting effects on the
+ research participants.
+ Is such research justified? This is a hard case to make, as the benefits
+ derived from the Zimbardo experiment have been doubtful at best due to
+ the poorly undertaken nature of the research.
+ However, could such research that damages the participants be considered
+ ethical in any scenario? Could it, perhaps, but only with the full understandin
+g and consent of the participants? It seems likely that the nature of such
+ an experiment is fundamentally harmful in such a way that it would be best
+ to attempt to gain the knowledge through other, more ethical research methods
+ if at all possible before trying such research techniques.
+ By no means should such research practices as those seen in Zimbardo be
+ standard or generally accepted within the scientific community.
+\end_layout
+
+\begin_layout Standard
+Some scientific research is seen as harming the public interest for other
+ reasons, such as Galileo Galilei’s assertions of a heliocentric planetary
+ model, which were regarded as heresy by the Catholic church, which was
+ the dominant social force in determining matters of ethics and morality
+ in Europe at that time.
+ This is a matter of ethics, as opposed to a matter purely of science, as
+ the scientific results were considered to be evil.
+ However, it seems that Galileo’s research has done no lasting harm, considering
+ that it has become widely accepted and is no longer a matter of significant
+ contention.
+ Perhaps this acceptance is because the issue with Galileo’s research is
+ the results he found, while with Zimbardo’s it is the ethics of the manner
+ in which the research was undertaken.
+\end_layout
+
+\begin_layout Standard
+Rights are an important social issue.
+ In 
+\emph on
+Mrs.
+ Dalloway
+\emph default
+, by Virginia Woolf, we encountered the debate about what rights should
+ be protected in the thorny instance of an individual with mental challenges.
+ One can consider whether Septimus Warren Smith had the right to not be
+ controlled by Holmes and Bradshaw.
+ Referring to Septimus, Woolf writes: “Lately he had become excited suddenly
+ for no reason (and both Dr.
+ Holmes and Sir William Bradshaw said excitement was the worst thing for
+ him)”
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Woolf, Virginia.
+ 
+\emph on
+Mrs.
+ Dalloway
+\emph default
+.
+ p.
+ 140.
+\end_layout
+
+\end_inset
+
+.
+ Does not Septimus have the right to exist without being bothered, regardless
+ of whether it is considered the best thing for him? He does no one else
+ any harm by being as he is, and is not disrupting society in any way, except
+ inasmuch as it may perhaps reduce his ability to contribute to it.
+ And even that seems that it may be excusable in light of the value of one’s
+ right to liberty, much as one could make such an argument for the legitimizatio
+n of a right to suicide.
+\end_layout
+
+\begin_layout Standard
+Likewise, is involuntary confinement of someone who is not a threat to society
+ moral or ethical? Does it violate the tradition of 
+\emph on
+habeas corpus
+\emph default
+? “Worshipping proportion, Sir William not only prospered himself but made
+ England prosper, secluded her lunatics, forbade childbirth, penalised despair,
+ made it impossible for the unfit to propagate their views until they, too,
+ shared his sense of proportion”
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Ibid
+\emph default
+.
+ p.
+ 99
+\end_layout
+
+\end_inset
+
+.
+ Does Bradshaw have any right whatsoever to impose such restraints, to place
+ such barriers upon freedom of expression and action? Perhaps one could
+ argue that the mentally incompetent are incapable by nature of exercising
+ these rights appropriately and effectively, and thus should not be afforded
+ them.
+ Nevertheless, even such disabled and tragically affected individuals still
+ likely have the right to have their desires and conscience and feelings
+ paid respect and honored by the society around them.
+ They are, presumably, individuals with their own emotions, realities, and
+ conceptions of the world, thus deserving the same respect afforded to the
+ healthy in any just and non-oppressive society.
+ These are important social issues to consider and address in the development
+ of an evolving societal system.
+\end_layout
+
+\begin_layout Standard
+Bigotry, hatred, racism, prejudice, and oppression are critical issues to
+ address in the modern society, with tragedies such as slavery, genocide,
+ and wartime racism persisting strongly into the present.
+ An understanding needs to be built and lessons learned from history about
+ how these elements can be addressed effectively and thoroughly, protecting
+ the rights of all.
+ In 
+\emph on
+The Souls of Black Folk
+\emph default
+, by prominent author W.
+ E.
+ B.
+ Du Bois, racism is a prominent theme that is discussed.
+ It is written that “the South believed an educated Negro to be a dangerous
+ Negro”
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Du Bois, W.
+ E.
+ B.
+ 
+\emph on
+The Souls of Black Folk
+\emph default
+.
+ p.
+ 24
+\end_layout
+
+\end_inset
+
+.
+ Du Bois considered this assessment by the South to have some validity,
+ because of the role of education in bringing forth “dissatisfaction and
+ discontent”
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\size normal
+\emph on
+Ibid.
+\end_layout
+
+\end_inset
+
+.
+ The recent development of feminist philosophies such as those seen in Virginia
+ Woolf’s and Adrienne Rich’s work is clearly a step in the right direction,
+ helping to sway the pendulum away from injustice, continuing along the
+ path boldly set by the civil rights movement in the 1960s.
+ However, racism and racial violence still persist, as evidenced and highlighted
+ by the recent racial tension surrounding police brutality.
+\end_layout
+
+\begin_layout Standard
+Theology plays an important role in society, providing a way for individuals
+ to understand their role in that society and in the world.
+ Occam’s Razor is a famous statement to the effect that “No more things
+ should be presumed to exist…”
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Haddon, Mark.
+ 
+\emph on
+The Curious Incident of the Dog in the Night-Time
+\emph default
+.
+ p.
+ 90.
+\end_layout
+
+\end_inset
+
+ than are needed to explain the observations about which a collective truth
+ has been established through consensus.
+ Despite the seeming rationality of that statement, I nevertheless often
+ choose to believe things on faith, despite being unable to prove them through
+ scientific observation and logic.
+ I come to these conclusions frequently as ways to best explain the parts
+ of the world around me that I do not understand scientifically, but nevertheles
+s seem to observe on a daily basis and believe to be real: life, emotions,
+ and other similarly difficult-to-quantify elements of the world around
+ us.
+ By considering the world and drawing my own conclusions, I can create my
+ own worldview, as real to me as the perceptions that are established through
+ consensus and scientific reasoning.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The Music of Life
+\emph default
+ presents a model of life that can be mistakenly argued to be unscientific,
+ because it does not explain many of the vagaries of the way life and the
+ way one’s personality and other traits that make one an individual come
+ about.
+ This model indicates that these traits are not coded in one’s genes, but
+ originate otherwise.
+ This model is scientifically reasonable, though, since the systems by which
+ these traits develop and function are not fully or thoroughly understood,
+ and are likely not completely determined quanta that can be effectively
+ evaluated by measuring systems.
+ Perhaps it is not possible to understand these traits at all.
+ Perhaps one wishes genes might provide the definitive coding for an organism,
+ providing a thorough way to comprehend the way that organism evolves and
+ develops.
+ However, this is not the way genes work.
+\end_layout
+
+\begin_layout Standard
+I believe that God has created a sort of fettered omniscience for Himself,
+ and has taken away His direct influence over the world and given living
+ things the capacity for moral self-direction.
+ This aspect of the world’s traits has been implemented in what has been
+ recognized as the theory of the uncertainty principle in quantum mechanics,
+ according to which nothing can be predicted with absolute certainty.
+ Traditional thinking would seem to hold that through a comprehensive understand
+ing of all the positions and vectors in a closed system, all of the states
+ of that situation — past, present, and future — can be known simultaneously.
+ Yet the observer effect leads to the situation that the most basic particles
+ of matter are unable to be observed or predicted, because any observation
+ will inevitably change their state, thus contributing to the chaos inherent
+ in the uncertainty principle.
+ In a lecture on quantum mechanics, the speaker discussed the idea of determinis
+m: I believe that these maxims of unpredictability lead to the effective
+ disintegration of multi-scale determinism, while it does seem to remain
+ effective and in effect in the world on our scale.
+ This unpredictability enables the world to exist as it does with true moral
+ sovereignty, without the consequential ethical nihilism of the philosophies
+ of fate or predestination.
+\end_layout
+
+\begin_layout Standard
+Gnosticism is a group of belief systems sharing certain core tenets, particularl
+y the focus on the development of 
+\emph on
+sophia
+\emph default
+ (wisdom) to attain 
+\emph on
+gnosis
+\emph default
+ (knowledge) and on the rejection of some elements of the physical world
+ in the endeavor to attain ascendance into the spiritual.
+ It shares common themes and elements with many Christian and other belief
+ systems.
+ In the Gnostic Gospel according to Mary Magdalene, it is written “There
+ is no sin, but it is you who make sin when you do the things that are like
+ the nature of adultery, which is called sin.”
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Gospel according to Mary Magdalene.
+ Chapter 4, verse 26.
+\end_layout
+
+\end_inset
+
+ This sentence emphasizes the Gnostic nature of the text, in its equating
+ of sin with adultery providing a connection to the traditional Gnostic
+ focus on the rejection of elements of the physical in the interest of the
+ finding of knowledge through wisdom.
+ While it would be hard to prove concretely that things like adultery are
+ bad, that badness can nevertheless be understood: it is a truth that can
+ be taken on faith, it can be understood through the collective wisdom of
+ society, or it can be felt in one’s heart.
+\end_layout
+
+\begin_layout Standard
+Present in my mind is the world presented by Francis Bacon in 
+\emph on
+The New Atlantis
+\emph default
+.
+ While it isn’t presented as a dystopia in his novel, and seems that Bacon
+ considers such an environment to be ideal, in light of the experiences
+ of society nowadays approaching its traits in some ways, it raises frightening
+ questions.
+ For instance, what should the role be of surveillance in a society? In
+ Bensalem, the society presented in the book, surveillance is present.
+ And yet, surveillance today can seem frightening, considering the potential
+ for its abuse.
+ How should safeguards be put in place to simultaneously enable effective
+ surveillance, while curtailing its abuse?
+\end_layout
+
+\begin_layout Standard
+Considering these elements in the process of creating a system for alternative
+ society development is clearly a vital part of the process.
+ Failure to do so can produce a system which is unjust, incompetent, and
+ inefficient.
+ By avoiding this failure, the system developed can embody its principle
+ objectives of creating an efficient, effective, and just society.
+ The concepts that in the many great texts of civilizations provide invaluable
+ insights for the development of the Ember project.
+\end_layout
+
+\begin_layout Section*
+Redesign commentary
+\end_layout
+
+\begin_layout Standard
+The document I have chosen to redesign is a chapter from an unfinished book
+ that I was working on, advocating my project to develop resources to serve
+ as models and infrastructure for innovative communities.
+ While the document has become outdated and does not accurately represent
+ the project in its present form, it does serve its purpose here as a document
+ to be redesigned.
+ Its purpose was to explain why my project is important, and to describe
+ and promote interest in it.
+ Its intended audience was individuals who would potentially be interested
+ in collaborating with me on the project.
+ The most significant readers' need served by the document is gaining an
+ understanding of my project and responding to curiosity regarding it.
+\end_layout
+
+\begin_layout Standard
+The previous version of this text was 
+\begin_inset Quotes eld
+\end_inset
+
+typeset
+\begin_inset Quotes erd
+\end_inset
+
+ only in the very loosest sense of the term, simply by dumping it into a
+ word processing app, and justifying it.
+ Because word processing apps need to render text quickly for interactive
+ editing, the results are suboptimal: justifying text nicely is a hard problem,
+ and requires more complex algorithms than can be practically implemented
+ for interactive editing.
+ For instance, spacing between words in carelessly typeset text is frequently
+ excessive, and there are often rivers (groups of spaces in consecutive
+ lines nearby each other) that make the page inelegant.
+ For this redesign, I have typeset the document using LyX/LaTeX, a computerized
+ typesetting and layout program with significantly better algorithms than
+ word processors usually have.
+ It is able to provide a superior layout because it does not attempt to
+ provide an accurate preview interactively when editing, and instead taking
+ the time needed to carefully typeset the document in a separate step from
+ document authoring.
+ Thus, the first change I made to the document was to use a real typesetting
+ system.
+\end_layout
+
+\begin_layout Standard
+The second change I made was to the typeface.
+ The previous version was set using Times New Roman, which is a serviceable,
+ classic, widely beloved typeface.
+ However, I personally find faces based on the work of Renaissance typographer
+ Nicholas Jenson to be more elegant and at least equally readable, and so
+ I used one for this document.
+ (There is a bit of an issue with this version of the italic face, as the
+ baseline doesn't match that of the Roman face; I haven't gotten around
+ to fixing that yet, making things look a bit 
+\emph on
+jarring
+\emph default
+ when set in italics.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+I don't understand yet how the baseline works in FontForge (my typeface
+ authoring app of choice), so my need to research and learn about that is
+ currently preventing fixing this issue.
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Third, I moved the citations from parentheticals into footnotes.
+ I don't think what I had (the entire citation embedded right in the text)
+ was based on any style guide
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+and even if it were I wouldn't approve of it
+\end_layout
+
+\end_inset
+
+, and it didn't look very good.
+ I'd generally prefer Chicago-style endnotes with in-text author-date parentheti
+cals, but simple footnotes are also perfectly acceptible and the difference
+ is simply a matter of personal preference; since they were quicker to implement
+ in this case (embarrassingly, it's been long enough that I have forgotten
+ how to use LyX's automatic bibliographies), I used them instead.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This would not be a problem if I had, ahem, not procrastinated, ahem, ahem.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
