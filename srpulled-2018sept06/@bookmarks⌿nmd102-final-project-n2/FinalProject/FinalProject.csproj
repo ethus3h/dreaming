@@ -221,12 +221,6 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Cloo">
-      <HintPath>Assets/Fluvio/_Main/Cloo.dll</HintPath>
-    </Reference>
-    <Reference Include="Fluvio.Runtime">
-      <HintPath>Assets/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Elliot/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -255,16 +249,13 @@
     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSpray.cs" />
     <Compile Include="Assets\Detonator Explosion Framework\TestScene\DetonatorTest.cs" />
     <Compile Include="Assets\Detonator Explosion Framework\TestScene\TouchToMouse.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL10.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL11.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL12.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\ComputeIncludeParser.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\FluvioRuntimeHelper.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\Threading\Interlocked.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\Threading\ThreadFactory.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\Threading\ThreadHandler.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\SamplePlugins\FluidMixer.cs" />
-    <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\SamplePlugins\FluidTouch.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\ExampleSceneFree.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\JoystickFree.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\MSButtonFree.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\MSFPSControllerFree.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\MSOpenURL.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\MSSceneControllerFree.cs" />
+    <Compile Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\MSVehicleControllerFree.cs" />
     <Compile Include="Assets\Prefabs\Packs\PyroParticles\Prefab\Script\FireBaseScript.cs" />
     <Compile Include="Assets\Prefabs\Packs\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
     <Compile Include="Assets\Prefabs\Packs\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
@@ -444,59 +435,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
-    <None Include="Assets\Fluvio\README.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Includes\FluvioCompute.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Includes\FluvioLanguageSupport.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\PhaseChange\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\PhaseChange\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\PhaseChange\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\FluidSolver\ComputeShader.cginc" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\FluidSolver\ComputeShader.compute" />
-    <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\FluidSolver\OpenCLShader.cl.txt" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\FluidEffect.cginc" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\FluidEffectShadow.cginc" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectMetal.shader" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectSpecular.shader" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectBlur.shader" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectComposite.shader" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceDepth.shader" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceMetal.shader" />
-    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceSpecular.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader-Lighting.cginc" />
-    <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader-Mobile.cginc" />
-    <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader.cginc" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Additive.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-AlphaBlended.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Multiply.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-Additive.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-AdditiveLit.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-AlphaBlended.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-Multiply.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Additive.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AdditiveLit.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AlphaBlended.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Multiply.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-VertexLitBlended.shader" />
-    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-VertexLitBlended.shader" />
-    <None Include="Assets\Fluvio\_Main\Fluvio.Runtime.xml" />
+    <None Include="Assets\MSVehicleSystem(FreeVersion)\Scripts\Shaders\SkidMarks.shader" />
+    <None Include="Assets\MSVehicleSystem(FreeVersion)\Update Notes.txt" />
     <None Include="Assets\Prefabs\Packs\Nature\info.txt" />
     <None Include="Assets\Prefabs\Packs\Ornamental Flower Set\Shaders\Transparent-BumpSpecNoCull.shader" />
     <None Include="Assets\Prefabs\Packs\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
