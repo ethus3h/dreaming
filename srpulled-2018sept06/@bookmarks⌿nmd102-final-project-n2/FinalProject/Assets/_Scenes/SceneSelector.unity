@@ -1836,6 +1836,57 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 128870, guid: 60db50946a122ca4084afb1bdbaf9317, type: 2}
   m_PrefabInternal: {fileID: 1986049511}
+--- !u!1001 &2042231130
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 48.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 250.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -20.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448695517279776, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647267759768580, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+      propertyPath: m_Name
+      value: S_Sunrise
+      objectReference: {fileID: 0}
+    - target: {fileID: 114378349961339322, guid: fd3d16ffe1a4017469ca61e6be64b9fa,
+        type: 2}
+      propertyPath: SceneName
+      value: Sunrise
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fd3d16ffe1a4017469ca61e6be64b9fa, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2068114664
 GameObject:
   m_ObjectHideFlags: 0
