@@ -238,6 +238,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Detonator Explosion Framework\Sample Supporting Emitters\DetonatorSprayHelper.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\Detonator.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorBurstEmitter.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorCloudRing.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorComponent.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorFireball.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorForce.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorGlow.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorHeatwave.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorLight.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorShockwave.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSmoke.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSound.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSparks.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSpray.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\TestScene\DetonatorTest.cs" />
+    <Compile Include="Assets\Detonator Explosion Framework\TestScene\TouchToMouse.cs" />
     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL10.cs" />
     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL11.cs" />
     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL12.cs" />
@@ -422,9 +439,11 @@
     <Compile Include="Assets\Sky FX Pack\Scripts\RayBehavior.cs" />
     <Compile Include="Assets\Sky FX Pack\Scripts\RotateBehaviour.cs" />
     <Compile Include="Assets\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
+    <Compile Include="Assets\TerrainToolkit\TerrainToolkit.cs" />
     <Compile Include="Assets\TerrainToolkit2017\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
     <None Include="Assets\Fluvio\README.txt" />
     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
@@ -780,6 +799,7 @@
     <None Include="Assets\Shaders\builtin_shaders-5.6.0f3\DefaultResourcesExtra\VideoDecodeAndroid.shader" />
     <None Include="Assets\Shaders\builtin_shaders-5.6.0f3\DefaultResourcesExtra\VideoDecodeOSX.shader" />
     <None Include="Assets\Shaders\builtin_shaders-5.6.0f3\license.txt" />
+    <None Include="Assets\TerrainToolkit\Read me.txt" />
     <None Include="Assets\TerrainToolkit2017\com\heparo\terrain\toolkit\documentation\ReadMe2017.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

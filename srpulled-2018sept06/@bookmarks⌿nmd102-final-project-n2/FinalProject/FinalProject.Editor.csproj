@@ -343,9 +343,11 @@
     <Compile Include="Assets\Prefabs\Packs\Weather\TimeOfDay&amp;WeatherSystem\Code\Editor\WeatherSun_Editor.cs" />
     <Compile Include="Assets\Prefabs\Packs\Weather\TimeOfDay&amp;WeatherSystem\Code\Editor\WeatherThunderstorm_Editor.cs" />
     <Compile Include="Assets\Shaders\Scripts\Editor\DirtyLensFlareEditor.cs" />
+    <Compile Include="Assets\TerrainToolkit\Editor\TerrainToolkitEditor.cs" />
     <Compile Include="Assets\TerrainToolkit2017\com\heparo\terrain\toolkit\editor\TerrainToolkitEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
     <None Include="Assets\Fluvio\README.txt" />
     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
@@ -701,6 +703,7 @@
     <None Include="Assets\Shaders\builtin_shaders-5.6.0f3\DefaultResourcesExtra\VideoDecodeAndroid.shader" />
     <None Include="Assets\Shaders\builtin_shaders-5.6.0f3\DefaultResourcesExtra\VideoDecodeOSX.shader" />
     <None Include="Assets\Shaders\builtin_shaders-5.6.0f3\license.txt" />
+    <None Include="Assets\TerrainToolkit\Read me.txt" />
     <None Include="Assets\TerrainToolkit2017\com\heparo\terrain\toolkit\documentation\ReadMe2017.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
